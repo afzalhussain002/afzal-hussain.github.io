@@ -9,12 +9,12 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
+      background: #ffffff;
+      color: #1e293b;
     }
 
     nav {
-      background: #020617;
+      background: #0f172a;
       padding: 15px;
       text-align: center;
     }
@@ -28,18 +28,18 @@
 
     header {
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #020617, #1e293b);
+      padding: 60px 20px;
+      background: #f1f5f9;
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 18px;
-      color: #94a3b8;
+      color: #475569;
     }
 
     section {
@@ -48,27 +48,27 @@
       padding: 40px 20px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+    h2 {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 10px;
     }
 
     .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 12px;
-      transition: 0.3s;
+      background: #f8fafc;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    ul {
+      padding-left: 20px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #020617;
+      background: #0f172a;
+      color: white;
       margin-top: 40px;
     }
   </style>
@@ -78,6 +78,8 @@
 
 <nav>
   <a href="#">Home</a>
+  <a href="#biography">Biography</a>
+  <a href="#education">Education</a>
   <a href="#research">Research</a>
   <a href="#experience">Experience</a>
   <a href="#contact">Contact</a>
@@ -85,40 +87,86 @@
 
 <header>
   <h1>Afzal Hussain</h1>
-  <p>Doctoral Researcher | Analytical Chemist | KTP Associate</p> 
+  <p>Doctoral Researcher | Analytical Chemist | KTP Associate</p>
 </header>
+
+<section id="biography">
+  <h2>Biography</h2>
+  <div class="card">
+    <p>
+      Afzal holds a Bachelor’s degree in Chemistry from the National University, Bangladesh, and a Master’s in Analytical and Forensic Chemistry from the University of Hull, UK (2023). His master’s research focused on developing a spectroscopic method to detect polymorphic differences between branded and generic pharmaceuticals, strengthening his expertise in analytical and computational chemistry.
+    </p>
+    <p>
+      He previously worked at Reckitt Benckiser, Hull, gaining hands-on experience with a range of analytical and spectroscopic techniques. He later joined the University of Plymouth as an R&D Analytical Chemist (KTP Associate) on an Innovate UK-funded project, where he developed a novel strategy for quantifying cannabinoids (CBD) in cosmetics and food supplements.
+    </p>
+    <p>
+      He is currently a PhD researcher at the University of Bath, applying wastewater-based epidemiology and advanced mass spectrometry to study pharmaceutical contamination in the environment and its implications for One Health.
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <ul>
+      <li>PhD Researcher – University of Bath (Current)</li>
+      <li>MSc Analytical & Forensic Chemistry – University of Hull (2023)</li>
+      <li>BSc Chemistry – National University, Bangladesh</li>
+    </ul>
+  </div>
+</section>
 
 <section id="research">
   <h2>Research & Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Environmental Chemistry</h3> 
-      <p>My PhD project applies wastewater-based epidemiology to monitor public health by analysing pharmaceuticals as proxies for disease prevalence and burden. By interpreting spatio-temporal trends and socio-demographic influences, the work aims to provide evidence-based insights that support regulatory bodies in making informed decisions on healthcare planning, intervention strategies, and resource allocation.</p> 
-    </div>
-    <div class="card">
-      <h3>Expertise</h3> 
-      <p>Excellent hands-on experience in analytical and spectroscopic techniques including LC-MS, GC-MS</p> 
-    </div>
+  <div class="card">
+    <h3>Environmental Chemistry (PhD)</h3>
+    <p>
+      Applying wastewater-based epidemiology to monitor public health by analysing pharmaceuticals as proxies for disease prevalence and burden. The work evaluates spatio-temporal trends and socio-demographic influences to support healthcare decision-making.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Polymorphic Changes of Drugs – University of Hull</h3>
+    <ul>
+      <li>FT-IR used to detect polymorphic changes</li>
+      <li>MATLAB for computational analysis</li>
+      <li>Chemometrics (PCA & SIMCA) for modelling</li>
+    </ul>
   </div>
 </section>
 
 <section id="experience">
   <h2>Experience</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>University of Plymouth</h3>
-      <p>R&D Analytical Chemist </br> UKRI-funded project</p> 
-    </div>
-    <div class="card">
-      <h3>Reckitt</h3>
-      <p>Quality Control Analyst </br> GMP & HPLC analysis</p> 
-    </div>
+
+  <div class="card">
+    <h3>R&D Analytical Chemist (KTP Associate) – University of Plymouth</h3>
+    <p>October 2024 – March 2025</p>
+    <ul>
+      <li>Hands-on experience with HPLC-PDA and GC-MS</li>
+      <li>Qualitative & quantitative cannabinoid analysis</li>
+      <li>Method development and validation</li>
+      <li>Instrument troubleshooting and data analysis</li>
+      <li>Scientific reporting and presentations</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>QC Analyst – Reckitt Benckiser</h3>
+    <p>February – September 2024</p>
+    <ul>
+      <li>Experience with HPLC, KF, UV-Vis, FT-IR</li>
+      <li>Testing pharmaceutical products (Gaviscon)</li>
+      <li>Data interpretation and reporting</li>
+      <li>Instrument maintenance and troubleshooting</li>
+    </ul>
   </div>
 </section>
 
-<section id="Contact"> 
+<section id="contact">
   <h2>Contact</h2>
-  <p>Email: mafzalhussain002@email.com</p> 
+  <div class="card">
+    <p>Email: mafzalhussain002@email.com</p>
+  </div>
 </section>
 
 <footer>
