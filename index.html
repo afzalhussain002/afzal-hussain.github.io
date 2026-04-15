@@ -3,47 +3,127 @@
 <head>
   <title>Afzal Hussain | Analytical Chemist</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body {font-family: Arial; margin:0; background:#0f172a; color:#e2e8f0;}
-    header {padding:40px; text-align:center; background:#020617;}
-    h1 {margin:0; font-size:40px;}
-    section {padding:40px; max-width:900px; margin:auto;}
-    .card {background:#1e293b; padding:20px; margin:20px 0; border-radius:10px;}
-    a {color:#38bdf8;}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    nav {
+      background: #020617;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #38bdf8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #020617, #1e293b);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #94a3b8;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
   </style>
 </head>
 
 <body>
 
+<nav>
+  <a href="#">Home</a>
+  <a href="#research">Research</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
   <h1>Afzal Hussain</h1>
-  <p>Analytical Chemist | HPLC | LC-MS | Career Coach</p>
+  <p>Doctoral Researcher | Analytical Chemist | KTP Associate</p> 
 </header>
 
-<section>
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I am an Analytical Chemist with experience in HPLC, GC, and method development. Currently working on UKRI-funded research and preparing for PhD opportunities.</p>
-  </div>
-
-  <div class="card">
-    <h2>Research & Projects</h2>
-    <p>Developing rapid cannabinoid analysis using HPLC validated with LC-MS.</p>
-  </div>
-
-  <div class="card">
-    <h2>Experience</h2>
-    <ul>
-      <li>University of Plymouth – R&D Analytical Chemist</li>
-      <li>Reckitt – QC Analyst</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: your-email@email.com</p>
+<section id="research">
+  <h2>Research & Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Environmental Chemistry</h3> 
+      <p>My PhD project applies wastewater-based epidemiology to monitor public health by analysing pharmaceuticals as proxies for disease prevalence and burden. By interpreting spatio-temporal trends and socio-demographic influences, the work aims to provide evidence-based insights that support regulatory bodies in making informed decisions on healthcare planning, intervention strategies, and resource allocation.</p> 
+    </div>
+    <div class="card">
+      <h3>Expertise</h3> 
+      <p>Excellent hands-on experience in analytical and spectroscopic techniques including LC-MS, GC-MS</p> 
+    </div>
   </div>
 </section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>University of Plymouth</h3>
+      <p>R&D Analytical Chemist </br> UKRI-funded project</p> 
+    </div>
+    <div class="card">
+      <h3>Reckitt</h3>
+      <p>Quality Control Analyst </br> GMP & HPLC analysis</p> 
+    </div>
+  </div>
+</section>
+
+<section id="Contact"> 
+  <h2>Contact</h2>
+  <p>Email: mafzalhussain002@email.com</p> 
+</section>
+
+<footer>
+  <p>© 2026 Afzal Hussain</p>
+</footer>
 
 </body>
 </html>
